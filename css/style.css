@@ -1,0 +1,373 @@
+:root {
+  --ff-h1: 'karla', sans-serif;
+  --ff-h2: 'montserrat', 'Karla';
+  --ff-p: 'montserrat', 'Karla';
+  --pd-size: 100px 60px;
+  --fs-h1: 50px;
+  --fs-h2: 25px;
+  --fs-h3: 20px;
+  --fs-p: 18px;
+  --fs-sm: 16px; 
+  --mb: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+
+/* General Styles */
+.container {
+  height: 100%;
+}
+
+.navbar {
+  background-color: #E04343;
+  text-align: center;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar__nav {
+  width: 200px;
+}
+
+.navbar__items  {
+  width: 100%;
+} 
+
+.navbar__items .fa, .navbar__items .fas {
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.navbar__items li {
+  padding: 10px;
+}
+
+.navbar__links, .navbar__links span {
+  display: block;
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  font-family: var(--ff-p);
+  color: white;
+}
+
+li {
+  display: block;
+}
+
+/* main content--home */
+.main {
+  margin-left: 200px;
+}
+
+.home__image {
+  padding: 150px 60px;
+  background-color: white;
+  background-image: url(../img/akp.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 500px;
+  background-position: 60% 0%;
+}
+
+.home__image h1 {
+  font-family: var(--ff-h1);
+  font-size: var(--fs-h1);
+  display: block;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+span {
+  color: #E04343;
+  font-family: var(--ff-h2);
+}
+
+.home__course {
+  font-family: var(--ff-h2);
+  font-size: var(--fs-p); 
+}
+
+/* about */
+.about {
+  padding: var(--pd-size);
+  background-color: #a08f8f;
+}
+
+.about__container {
+  text-align: center;
+  padding: 15px;
+}
+
+.about__container h1{
+  font-family: var(--ff-h1);
+  margin-bottom: var(--mb);
+  font-size: var(--fs-h2);
+}
+
+.about__container p{
+  font-family: var(--ff-h2);
+  font-size: var(--fs-p);
+  line-height: 1.5em;
+}
+
+/* profile */
+.profile {
+  padding: var(--pd-size);
+  border-bottom: 1px solid #a08f8f;
+}
+
+.profile h1 {
+  font-family: var(--ff-h1);
+  font-size: var(--fs-h1);
+  margin-bottom: var(--mb); 
+}
+
+.profile__items {
+  font-family: var(--ff-p);
+  font-size: var(--fs-p);
+  line-height: 1.5em;
+}
+/* experience, education, skill, interest, project */
+.experience {
+  padding: var(--pd-size);
+  border-bottom: 1px solid #a08f8f;
+}
+
+.education {
+  padding: var(--pd-size);
+  border-bottom: 1px solid #a08f8f;
+}
+
+.skills {
+  padding: var(--pd-size);
+  border-bottom: 1px solid #a08f8f;
+}
+
+.interest {
+  padding: var(--pd-size);
+  border-bottom: 1px solid #a08f8f;
+}
+
+.project {
+  padding: var(--pd-size);
+  border-bottom: 1px solid #a08f8f;
+}
+
+
+.skill__lang-items, .skill__soft-items {
+  display: inline;
+}
+
+/* content headings and fonts */
+.experience__item-1, .education__item-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb);
+}
+
+.experience__container h1, .education__container h1, .skill__container h1, .project h1 {
+  font-family: var(--ff-h1);
+  font-size: var(--fs-h1);
+  margin-bottom: var(--mb);
+}
+
+.experience__item-1 h2, .education__container h2, .skill__lang h2, .skill__soft h2 {
+  font-family: var(--ff-h2);
+  font-size: var(--fs-h2);
+  color: #E04343;
+}
+
+.experience__item-1 h3, .education__container h3 {
+  font-family: var(--ff-h2);
+  font-size: var(--fs-h3);
+}
+
+.experience__item-1 p, .education__container p, .interest__container p {
+  font-family: var(--ff-p);
+  font-size: var(--fs-p);
+}
+
+.skill__lang-items .fab {
+  font-size: 70px;
+  padding: 10px;
+}
+.skill__soft-items img {
+  width: 90px;
+  padding: 10px;
+}
+
+.interest__container-mg h2 {
+  font-family: var(--ff-h1);
+  font-size: var(--fs-h1);
+  margin-bottom: var(--mb);
+  color: #E04343;
+}
+
+.project p {
+  color: #E04343;
+  font-family: var(--ff-p);
+  font-size: var(--fs-p);
+  margin-bottom: var(--mb);
+}
+
+.project__img {
+  display: flex;
+}
+
+li .fab {
+  font-size: 20px;
+}
+
+li a {
+  text-decoration: none;
+  font-size: var(--fs-p);
+}
+
+/* form */
+form{
+  text-align: center;
+  background: white;
+  border-radius: 20px 20px 20px 0;
+  padding: var(--pd-size);
+}
+
+.form h1 {
+  font-family: var(--ff-h1);
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: var(--mb);
+}
+
+.form_input label, .comment__box label {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-family: var(--ff-h2);
+  font-size: var(--fs-p);
+}
+
+.form_input input, .comment__box textarea {
+  display: block;
+  width: 50%;
+  padding: 16px;
+  border: 0;
+  background-color: #edf2f7;
+  font-size: 16px;
+  color: #000000a1;
+  border-radius: 5px;
+  margin-bottom: 32px;
+}
+
+.form_input input::placeholder {
+  font-size: 16px;
+}
+
+.select-selected{
+  background: #E04343;
+}
+
+
+button{
+  display: block;
+  width: 50%;
+  margin-top: 32px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px 10px 10px 0;
+  border: none;
+  background: #E04343;
+  color: white;
+  font-family: var(--ff-h2);
+  font-size: var(--fs-p);
+}
+
+button:hover{
+  background: rgb(156, 62, 62);
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 768px) {
+  :root {
+    --pd-size: 30px;
+    --fs-h1: 30px;
+    --fs-h2: 24px;
+    --fs-h3: 18px;
+    --fs-p: 16px;
+    --fs-sm: 14px; 
+  }
+
+  .navbar {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar__nav {
+    width: 100%;
+  }
+
+  .navbar__items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar__items li {
+    float: left;
+    padding: 0;
+  }
+
+  .navbar__items li a>span {
+    display: none;
+  }
+  .navbar__items li i.fa,
+  .navbar__items li i.fas {
+    font-size: 16px;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .home__image {
+    background-image: none;
+  }
+
+  .about__container {
+    padding: 0;
+  }
+
+  .about, .profile, .experience, .education, .skills, .interest, .project, form {
+    padding: var(--pd-size);
+  
+  }
+
+  .skill__lang h2, .skill__soft h2{
+    font-size: var(--fs-h3);
+  }
+
+
+  .form_input input, .comment__box textarea {
+    width: 100%;
+  }
+}
