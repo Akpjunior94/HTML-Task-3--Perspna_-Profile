@@ -4,7 +4,7 @@
 
 ### Screenshot 1
 
-![](/screenshot/image1.PNG)
+![](/screensoft/inage1.png)
 
 ### Screenshot 2
 
